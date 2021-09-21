@@ -17,6 +17,7 @@ public class SpringbootKafkaApplication {
 
 	@KafkaListener(topics = "${kafka.topic_name}", groupId = "${kafka.group_id}", id = "horas")
 	public void listener(String message) {
-		logger.info("Received message = {}", message);
+		logger.info("recv timestamp: {} ",System.currentTimeMillis());
+		logger.info("Incoming message : {}", message);
 	}
 }

@@ -1,4 +1,4 @@
-# Springboot as Consumer to Kafka
+# Springboot as Consumer and Producer to Kafka
 
 ## Environment
 
@@ -48,7 +48,3 @@
 
 ```mvn spring-boot:run```
 
-
-### Simulate a producer from kafka_kafka_1 docker
-
-```kafka-console-producer --broker-list 127.0.0.1:9092 --topic my-topic```
